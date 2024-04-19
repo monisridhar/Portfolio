@@ -125,6 +125,36 @@ header nav .search i {
   font-size: 3.5rem;
 }
 
+
+.intro .typewriter .text{
+  position: relative;
+  color:white;
+  font-weight: 500;
+  font-size: 2.0rem;
+  margin-right: 127px;
+}
+
+.intro .typewriter .text.sec-text:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: #34353b;
+border-left: 2px solid white;
+animation: animate 5s steps(25) infinite;
+}
+
+@keyframes animate{
+  40%,60%{
+    left:100%;
+  }
+  100%{
+    left:0%;
+  }
+}
+
 .intro button {
   height: 48px;
   width: 144px;
