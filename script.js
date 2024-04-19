@@ -1,7 +1,15 @@
-$('.portfolio-button').mousedown(function(){
-    timeout = setInterval(function(){
-        window.scrollBy(0,-1); // May need to be -1 to go down
-    }, 0); // Play around with this number. May go too fast
+const text=document.querySelector(".sec-text");
 
-    return false;
-});
+const textLoad=()=>{
+    setTimeout(() => {
+        text.textContent="Front End Developer";
+    }, 0);
+    setTimeout(() => {
+        text.textContent="UI Developer";
+    }, 5000);
+    setTimeout(() => {
+        text.textContent="Full Stack Developer";
+    }, 10000);
+}
+textLoad();
+setInterval(textLoad,15000);
