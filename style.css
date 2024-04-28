@@ -174,6 +174,67 @@ animation: animate 5s steps(25) infinite;
   color: #34353b;
 }
 
+@media only screen and (max-width:600px){
+
+  .landing{
+    width:500px;
+  }
+  .landing .intro h3{
+      margin-right: 30px;
+      font-size: 20px;
+  }
+  .landing .intro h3 span{
+    font-size: 3.0rem;
+  }
+
+  .socials{
+    margin-right: 40px;
+    margin-top: 190px;
+  }
+
+  .about .description p {
+    width:450px;
+  }
+
+  .skills{
+    margin-top: 130px;
+    width:450px;
+  }
+  .skills h1{
+    font-size: 40px;
+    width:450px;
+    margin-left: 190px;
+  }
+
+  .skills{
+    padding:none;
+
+  }
+
+  .skill-card{
+    height: 190vw;
+    width: 190vw;
+  }
+
+  .project-cards{
+    margin-left: 170px;
+    display: grid;
+  }
+
+  .contact-me h1{
+    font-size: 30px;
+    width:450px;
+    margin-left: 240px;
+  }
+
+  .contact{
+    margin-left: 320px;
+    display: flex;
+  }
+
+  
+}
+
 .socials {
   display: flex;
   flex-direction: column;
@@ -266,8 +327,8 @@ animation: animate 5s steps(25) infinite;
 }
 
 .skill-card img {
-  height: 7.5vw;
-  width: 7.5vw;
+  height: 8.0vw;
+  width: 8.0vw;
   object-fit: contain;
 }
 
@@ -294,10 +355,12 @@ animation: animate 5s steps(25) infinite;
 
 .project-cards {
   display: grid;
+  /* grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
   grid-template-columns: auto auto auto;
   margin-top: 50px;
-  gap: 2.5vh;
+  gap: 20px;
 }
+
 
 .project-card {
   position: relative;
@@ -310,6 +373,13 @@ animation: animate 5s steps(25) infinite;
   justify-content: center;
   gap: 2.5vh;
   transition: all ease 0.5s;
+  display: none;
+}
+
+.project-card:nth-child(1),
+.project-card:nth-child(2),
+.project-card:nth-child(3){
+  display: grid;
 }
 
 .project-card img {
@@ -365,7 +435,7 @@ animation: animate 5s steps(25) infinite;
   opacity:1;
 }
 
-.project button {
+.project .load-more button{
   margin-top: 50px;
   height: 48px;
   width: 144px;
@@ -379,7 +449,7 @@ animation: animate 5s steps(25) infinite;
   transition: all ease 0.5s;
 }
 
-.project button:hover {
+.project .load-more button:hover {
   background-color: #cc9e4e;
 }
 
@@ -500,3 +570,4 @@ animation: animate 5s steps(25) infinite;
   gap: 10px;
   margin-top: 7.5vh;
 }
+
